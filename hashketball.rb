@@ -162,10 +162,11 @@ def team_names
   end
 end
 
-def player_numbers (team_name)
+def player_numbers (input_name)
   new_array = []
-  game_hash.map do |team, team_info|
-    team_info.map do |players, player_name|
+  game_hash.each do |team, team_info|
+    if team_info[] == input_name
+      
       new_array << player_name[:number]
     end
   end
