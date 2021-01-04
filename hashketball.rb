@@ -152,7 +152,7 @@ def team_colors (individual_team)
     return game_hash[:home][:colors]
   end
   if individual_team == "Charlotte Hornets"
-    return game_hash[:home][:away]
+    return game_hash[:away][:colors]
   end
 end
 
