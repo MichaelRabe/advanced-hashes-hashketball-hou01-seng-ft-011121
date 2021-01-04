@@ -141,6 +141,7 @@ def get_team_helper(team)
 end
 
 def player_numbers(team)
+  case team
   get_team_helper(team)[:players].map do |key, value|
     value[:number]
   end
