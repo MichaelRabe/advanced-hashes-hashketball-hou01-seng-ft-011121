@@ -132,6 +132,7 @@ def player_helper
 end
 
 def get_team_helper(team)
+  binding.pry
   case team
   when game_hash[:home][:team_name]
     game_hash[:home]
@@ -148,4 +149,8 @@ end
 
 def num_points_scored(player)
   player_helper[:player][:score]
+end
+
+binding.pry
+
 end
