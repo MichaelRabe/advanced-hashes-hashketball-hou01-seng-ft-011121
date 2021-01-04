@@ -132,7 +132,7 @@ def player_helper
 end
 
 def get_team_helper(team)
-  binding.pry
+binding.pry
   case team
   when game_hash[:home][:team_name]
     game_hash[:home]
