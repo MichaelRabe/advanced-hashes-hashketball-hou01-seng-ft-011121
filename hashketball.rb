@@ -140,8 +140,6 @@ def get_team_helper(team)
     game_hash[:away]
   end
 end
-end
-end
 
 def player_numbers(team)
   get_team(team)[:players].map do |player|
