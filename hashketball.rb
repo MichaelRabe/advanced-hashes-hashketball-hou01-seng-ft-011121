@@ -117,27 +117,10 @@ def game_hash
   }
 end
 
-def player_helper
-  game_hash[:home][:players] + (game_hash[:away][:players])
-end
 
-def get_team_helper(team)
-  case team
-  when game_hash[:home][:team_name]
-    game_hash[:home]
-  when game_hash[:away][:team_name]
-    game_hash[:away]
-  end
-end
 
-def player_numbers(team)
-  get_team(team)[:players].map do |player|
-    player[:number]
-  end
-end
-
-def num_points_scored(player)
-  player_helper[:player][:score]
+def num_points_scored(player_name)
+  player[:score]
 end
 
 binding.pry
