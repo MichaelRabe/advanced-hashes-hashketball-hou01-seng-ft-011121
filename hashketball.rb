@@ -181,6 +181,8 @@ end
 def player_stats (individual_name)
   new_hash = {}
     game_hash.each do |team, team_info|
+      team_info.each do |key, value|
       binding.pry
     end
+  end
 end
