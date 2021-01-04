@@ -165,9 +165,11 @@ end
 def player_numbers (input_name)
   new_array = []
   game_hash.each do |team, team_info|
-    if team_info[] == input_name
-      
-      new_array << player_name[:number]
+    if team_info[:team_name] == input_name
+      team_info.each do |key, value|
+        if key == :players
+          value.each do |player|
+      new_array << player[:number]
     end
   end
 end
