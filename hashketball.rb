@@ -164,8 +164,8 @@ end
 
 def player_numbers (team_name)
   game_hash.map do |team, team_info|
-    binding.pry
-    team_info[]
+    team_info.map do |players, player_name|
+      return player_name[:number]
   end
 end
 
