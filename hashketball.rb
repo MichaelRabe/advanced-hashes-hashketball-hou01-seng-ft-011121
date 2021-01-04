@@ -163,7 +163,10 @@ def team_names
 end
 
 def player_numbers (team_name)
-  
+  game_hash.map do |team, team_info|
+    binding.pry
+    team_info[]
+  end
 end
 
 def player_stats (individual_name)
