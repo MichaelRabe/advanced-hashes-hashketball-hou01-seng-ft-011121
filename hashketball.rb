@@ -148,4 +148,3 @@ def player_numbers(team)
     end
   end 
 end
-binding.pry
