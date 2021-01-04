@@ -163,9 +163,10 @@ def team_names
 end
 
 def player_numbers (team_name)
+  new_array = []
   game_hash.map do |team, team_info|
     team_info.map do |players, player_name|
-      return player_name[:number]
+      new_array << player_name[:number]
     end
   end
 end
