@@ -129,6 +129,7 @@ end
 
 def player_helper
   game_hash[:home][:players] + (game_hash[:away][:players])
+binding.pry
 end
 
 def get_team_helper(team)
