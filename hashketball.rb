@@ -1,4 +1,5 @@
-# Write your code below game_hash
+require 'pry'
+
 def game_hash
   {
     home: {
@@ -126,4 +127,22 @@ def game_hash
   }
 end
 
-# Write code here
+def player_helper
+  game_hash[:home][:players] + (game_hash[:away][:players])
+end
+
+def get_team_helper(team)
+  case team
+  when game_hash[:home][:team_name]
+    game_hash[:home]
+  when game_hash[:away][:team_name]
+    game_hash[:away]
+  end
+end
+
+def player_numbers(team)
+  binding.pry
+  get_team_helper(team)[:players].map do |key, value|
+    value[:number]
+  end
+end 
