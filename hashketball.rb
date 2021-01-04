@@ -163,17 +163,20 @@ def team_names
 end
 
 def player_numbers (input_name)
-  new_array = []
-  game_hash.each do |team, team_info|
-    if team_info[:team_name] == input_name
-      team_info.each do |key, value|
+    new_array = []
+      game_hash.each do |team, team_info|
+        if team_info[:team_name] == input_name
+          team_info.each do |key, value|
         if key == :players
           value.each do |player|
-      new_array << player[:number]
+            new_array << player[:number]
+        end
+      end    
     end
   end
 end
-
+new_array
+end
 def player_stats (individual_name)
   
 end
