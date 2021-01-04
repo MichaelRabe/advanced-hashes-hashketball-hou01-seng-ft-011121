@@ -142,9 +142,13 @@ binding.pry
 end
 
 def player_numbers(team)
-  case team
-    when get_team_helper(team)[:players].map do |key, value|
-    value[:number]
-    end
-  end 
+  get_team(team)[:players].map do |player|
+    player[:number]
+  end
 end
+
+def num_points_scored(player)
+  player_helper[:player][:score]
+end
+
+binding.pry
