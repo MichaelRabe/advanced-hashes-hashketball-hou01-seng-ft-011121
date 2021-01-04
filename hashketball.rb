@@ -128,6 +128,7 @@ def game_hash
 end
 
 def player_helper
+  binding.pry
   game_hash[:home][:players] + (game_hash[:away][:players])
 end
 
