@@ -119,6 +119,6 @@ end
 
 
 
-def num_points_scored(player_name)
+def num_points_scored player_name
   player[:score]
 end
