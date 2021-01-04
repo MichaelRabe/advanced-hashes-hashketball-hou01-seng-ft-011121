@@ -141,7 +141,6 @@ def get_team_helper(team)
 end
 
 def player_numbers(team)
-  binding.pry
   get_team_helper(team)[:players].map do |key, value|
     value[:number]
   end
