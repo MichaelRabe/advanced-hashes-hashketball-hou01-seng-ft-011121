@@ -157,7 +157,7 @@ def team_colors (individual_team)
 end
 
 def team_names
-  game_hash
+  game_hash[team_name][0] + game_hash[team_name][1]
 end
 
 def player_numbers (team_name)
