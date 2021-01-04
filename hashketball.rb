@@ -177,6 +177,9 @@ def player_numbers (input_name)
 end
 new_array
 end
+
 def player_stats (individual_name)
-  
+  new_hash = {}
+    game_hash.each do |team, team_info|
+      binding.pry
 end
