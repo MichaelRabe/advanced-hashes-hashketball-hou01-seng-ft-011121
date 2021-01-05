@@ -185,7 +185,7 @@ def player_stats (individual_name)
         if key == :players
           value.each do |player|
             if individual_name ==  player[:player_name]
-              new_hash << player
+              new_hash.push(player)
             end
           end
         end
