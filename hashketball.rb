@@ -204,5 +204,4 @@ def big_shoe_rebounds
     end
   end
   max_rebounds
-  binding.pry
 end
