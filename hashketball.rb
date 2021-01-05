@@ -183,7 +183,7 @@ def player_stats (individual_name)
       team_info.each do |key, value|
         if key == :players
           value.each do |player|
-            if input ==  player[:player_name]
+            if individual_name ==  player[:player_name]
               player.delete(:player_name)
               return player
             end
