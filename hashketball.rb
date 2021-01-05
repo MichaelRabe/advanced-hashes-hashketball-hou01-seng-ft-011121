@@ -179,16 +179,17 @@ new_array
 end
 
 def player_stats (individual_name)
-    game_hash.each do |team, team_info|
+    new_hash= {}
+      game_hash.each do |team, team_info|
       team_info.each do |key, value|
         if key == :players
           value.each do |player|
             if individual_name ==  player[:player_name]
-              player.delete(:player_name)
-              return player
+              new_hash << player
             end
           end
         end
     end
   end
+  new_hash
 end
