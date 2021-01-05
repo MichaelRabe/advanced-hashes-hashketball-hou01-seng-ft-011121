@@ -203,5 +203,5 @@ def big_shoe_rebounds
       end
     end
   end
-  max_rebounds
+  return max_rebounds
 end
